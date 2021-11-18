@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Alvaro",
+    "age": 38,
+    "email": "alvarollvv@gmail.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/61958a7645f8ccf170564f24 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/61957e71a8e4be3aa1cb7b12 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "guanajuato",
+    "age": 10,
+    "email": "gto@gob.comemail"
+}
+
+###
+DELETE  http://localhost:9000/api/users/61957e71a8e4be3aa1cb7b12 HTTP/1.1
